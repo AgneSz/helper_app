@@ -1,0 +1,21 @@
+
+
+rails generate model Exchange public_transaction_id:integer currency_exchange_rate_id:integer amount_from:integer amount_to:integer commission_amount:integer currency:string
+
+rails generate model Currency_Exchange_Rates currency_from:string currency_to:string exchange_rate:decimal 
+
+rails generate Model Commission currency_from:string currency_to:string commission_percentage:integer
+
+
+
+
+
+rails generate model User name email
+
+rails generate model Currency iso_code name
+
+rails generate model Account user:references currency:references
+
+rails generate model Settlement account:references balance:integer
+
+rails generate model Transaction public_transaction_id:integer account:references amount:integer status:string settlement:references

@@ -1,0 +1,4 @@
+<%= CSV.generate_line(["id", "name", "email"]) %>
+<% @users.each do |user| %>
+  <%= CSV.generate_line([user.id, user.name, user.email]) %>
+<% end %>

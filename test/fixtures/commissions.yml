@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  currency_from: MyString
+  currency_to: MyString
+  commission_percentage: 1
+
+two:
+  currency_from: MyString
+  currency_to: MyString
+  commission_percentage: 1
